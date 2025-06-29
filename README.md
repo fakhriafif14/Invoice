@@ -88,6 +88,11 @@ invoice/
 
 ---
 
+Berikut adalah versi yang sudah **dirapikan, diperbaiki format markdown-nya**, dan bebas dari kesalahan seperti block code yang tidak ditutup atau penulisan dobel ikon/email:
+
+---
+
+````markdown
 ## 🛠️ Cara Instalasi
 
 1. **Clone atau Unduh Project**
@@ -96,6 +101,7 @@ invoice/
 ````
 
 2. **Letakkan Folder di XAMPP**
+   Pindahkan folder hasil clone ke:
 
    ```
    C:\xampp\htdocs\invoice
@@ -103,13 +109,13 @@ invoice/
 
 3. **Import Database**
 
-   * Jalankan XAMPP, buka `phpMyAdmin`
-   * Buat database baru misalnya: `invoice_db`
+   * Jalankan XAMPP dan buka `phpMyAdmin`
+   * Buat database baru, misalnya: `invoice_db`
    * Import file SQL dari folder `DATABASE FILE/`
 
 4. **Sesuaikan Koneksi Database**
 
-   * Edit file koneksi di `includes/config.php` (atau sesuai file kamu)
+   * Edit file koneksi di `includes/config.php` (atau sesuai struktur file kamu)
    * Contoh:
 
      ```php
@@ -120,6 +126,7 @@ invoice/
      ```
 
 5. **Jalankan Aplikasi di Browser**
+   Akses melalui URL:
 
    ```
    http://localhost/invoice
@@ -127,11 +134,11 @@ invoice/
 
 ---
 
-## 🔐 Informasi Login 
+## 🔐 Informasi Login
 
-| Role  | Username | Password     |
-| ----- | -------- | --------     |
-| Admin | admin    | Password@123 |
+| Role  | Username | Password      |
+| ----- | -------- | ------------- |
+| Admin | admin    | Password\@123 |
 
 > 📌 Disarankan untuk mengganti username/password default demi keamanan.
 
@@ -139,29 +146,30 @@ invoice/
 
 ## 📸 Screenshot Tampilan
 
-> *(Tambahkan screenshot jika ada. Misal: login page, dashboard, invoice, dll.)*
+> *(Tambahkan screenshot jika ada. Misalnya: halaman login, dashboard, daftar invoice, dsb.)*
 
 ---
 
 ## 🧾 Catatan Tambahan
 
-* Pastikan modul PHP seperti `mysqli` dan `mbstring` aktif di XAMPP
-* PHPMailer dapat dikonfigurasi menggunakan SMTP Gmail untuk pengiriman email
-* File konfigurasi dan kredensial sebaiknya tidak diupload ke repository publik
+* Pastikan modul PHP seperti `mysqli`, `mbstring`, dan `openssl` aktif di XAMPP
+* PHPMailer dapat dikonfigurasi menggunakan SMTP Gmail untuk mengirim email otomatis
+* Jangan upload file konfigurasi atau kredensial ke repository publik untuk menjaga keamanan
 
 ---
 
 ## 📬 Kontak Pengembang
 
 Dikembangkan oleh: **Fakhriafif**
-📧 📧 Email: [fakhriafif788@email.com](mailto:fakhriafif788@email.com)
+📧 Email: [fakhriafif788@email.com](mailto:fakhriafif788@email.com)
+
 🏫 Universitas Pelita Bangsa
 
 ---
 
 ## 📄 Lisensi
 
-Proyek ini bersifat open-source dan bebas digunakan untuk keperluan pembelajaran dan pengembangan. Harap mencantumkan nama pengembang jika digunakan secara publik atau dikomersialkan.
+Proyek ini bersifat open-source dan bebas digunakan untuk keperluan pembelajaran serta pengembangan. Mohon mencantumkan nama pengembang jika digunakan secara publik atau dikomersialkan.
 
-````
+```
 
